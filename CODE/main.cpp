@@ -30,4 +30,25 @@ private:
     vector<pair<int, int>> tail; // Vector to store the segments of the snake's tail
     int score;
 }
+<<<<<<< HEAD
 
+=======
+public:
+    Snake() : x(width / 2), y(height / 2), score(0) {}
+
+    void move(int dir) {
+        // Insert new head position
+        tail.insert(tail.begin(), { x, y });
+        switch (dir) {
+            case 0: y--; break; // UP
+            case 1: y++; break; // DOWN
+            case 2: x--; break; // LEFT
+            case 3: x++; break; // RIGHT
+        }
+
+        // Only remove the last segment if not growing
+        if (tail.size() > score + 1) {
+            tail.pop_back(); // Keep the tail the right length
+        }
+    }
+>>>>>>> 4fe9276 (Tao duoi ran)
