@@ -51,4 +51,19 @@ public:
             tail.pop_back(); // Keep the tail the right length
         }
     }
+<<<<<<< HEAD
 >>>>>>> 4fe9276 (Tao duoi ran)
+=======
+    void grow() {
+        score++; // Increment score
+        tail.push_back(tail.back()); // Duplicate the last segment
+    }
+
+    bool checkCollision() {
+        if (x >= width - 1 || x < 1 || y >= height - 1 || y < 1) return true; // Wall collision
+        for (const auto& segment : tail) { // Check all segments
+            if (segment.first == x && segment.second == y) return true; // Self collision
+        }
+        return false;
+    }
+>>>>>>> e7ed6d8 (Kiem tra va cham)
