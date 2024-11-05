@@ -136,12 +136,10 @@ public:
                 if (i == snake.getY() && j == snake.getX()) {
                     setColor(9); // Snake head (blue)
                     cout << "O";
-                }
-                else if (i == food.getY() && j == food.getX()) {
+                } else if (i == food.getY() && j == food.getX()) {
                     setColor(food.getColor()); // Set random color for food
                     cout << food.getSymbol(); // Display random food symbol
-                }
-                else {
+                } else {
                     bool print = false;
                     for (const auto& segment : snake.getTail()) {
                         if (segment.first == j && segment.second == i) {
@@ -169,6 +167,122 @@ public:
 
         setColor(7); // Reset color for normal text
     }
+
+    void Input() {
+        if (_kbhit()) {
+            switch (_getch()) {
+            case 0: // Special keys start with 0
+            case 224: // Special keys
+                switch (_getch()) { // Get the actual key
+                case 72: direction = 0; break; // UP arrow
+                case 80: direction = 1; break; // DOWN arrow
+                case 75: direction = 2; break; // LEFT arrow
+                case 77: direction = 3; break; // RIGHT arrow
+                }
+                break;
+            case 27: // Escape key
+                gameOver = true; break;
+            }
+        }
+    }
+
+    void Logic() {
+        snake.move(direction);
+        
+        // Check for food consumption
+        if (snake.getX() == food.getX() && snake.getY() == food.getY()) {
+            snake.grow(); // Grow the snake
+            food.spawn(); // Spawn new food
+            Beep(750, 100); // Sound for eating food
+            
+            // Increase speed by 10%
+            speed = static_cast<int>(speed * 0.9); // Decrease sleep time by 10%
+        }
+        
+        if (snake.checkCollision()) {
+            gameOver = true; // Collision with wall or itself
+        }
+    }
+
+void Run() {
+    while (!gameOver) {
+        Input(); // Handle user input
+        Draw();
+        Logic();
+        Sleep(speed); // Control the speed of the snake
+    }
+
+    // Game Over logic
+    Draw(); // Final draw to show the last state
+
+    setColor(7); // Reset color for normal text
+
+    if (snake.getScore() > highestScore) {
+        cout << "Congratulations! You have a new highest score: " << snake.getScore() << endl;
+    } else if (snake.getScore() == highestScore) {
+        cout << "It's a draw! Your score equals the highest score: " << highestScore << endl;
+    } else {
+        cout << "Game Over!" << endl;
+        cout << "Your score: " << snake.getScore() << " (Highest Score: " << highestScore << ")" << endl;
+    }
+
+}
+
+
+    int getScore() const {
+        return snake.getScore();
+    }
+
+    int getHighestScore() const {
+        return highestScore;
+    }
+};
+
+// Function to load the highest score from a file
+int loadHighestScore() {
+    int score = 0;
+    ifstream inFile(highScoreFile);
+    if (inFile.is_open()) {
+        inFile >> score;
+        inFile.close();
+    }
+    return score;
+}
+
+// Function to save the highest score to a file
+void saveHighestScore(int score) {
+    ofstream outFile(highScoreFile);
+    if (outFile.is_open()) {
+        outFile << score;
+        outFile.close();
+    }
+}
+
+// Main function to run the game
+int main() {
+    int highestScore = loadHighestScore(); // Load highest score from file
+    char playAgain;
+
+    do {
+        Game game(highestScore);
+        game.Run(); // Run the game
+
+        // Update highest score
+        if (game.getScore() > highestScore) {
+            highestScore = game.getScore();
+        } 
+
+        // Save the highest score when the game ends
+        saveHighestScore(highestScore);
+
+        cout << "Do you want to play again? (Y/N): ";
+        cin >> playAgain;
+        playAgain = toupper(playAgain); // Convert to uppercase for consistency
+
+    } while (playAgain == 'Y');
+
+    cout << "Thank you for playing! Final Highest Score: " << highestScore << endl;
+    return 0;
 }
 
 class Snake {
