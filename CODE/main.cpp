@@ -66,4 +66,20 @@ public:
         }
         return false;
     }
+<<<<<<< HEAD
 >>>>>>> e7ed6d8 (Kiem tra va cham)
+=======
+
+int getX() const { return x; }
+    int getY() const { return y; }
+    int getScore() const { return score; }
+    const vector<pair<int, int>>& getTail() const { return tail; }
+
+    void reset() {
+        x = width / 2;
+        y = height / 2;
+        score = 0;
+        tail.clear();
+    }
+};
+>>>>>>> 28ad5dc (Snake utility functions)
