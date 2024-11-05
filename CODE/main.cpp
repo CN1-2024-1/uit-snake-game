@@ -1,4 +1,3 @@
-
 class Food 
 {
 private:
@@ -24,3 +23,11 @@ public:
 	char getSymbol() const { return symbol; }
     int getColor() const { return color; }
 };
+
+class Snake {
+private:
+    int x, y;
+    vector<pair<int, int>> tail; // Vector to store the segments of the snake's tail
+    int score;
+}
+
