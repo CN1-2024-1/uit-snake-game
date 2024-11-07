@@ -17,34 +17,7 @@ void setColor(int color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
-// Main function where the game runs
-int main()
-{
-    int highestScore = loadHighestScore(); // Load highest score from file
-    char playAgain;
-
-    do {
-        Game game(highestScore);
-        game.Run(); // Run the game
-
-        // Update highest score
-        if (game.getScore() > highestScore) {
-            highestScore = game.getScore();
-        } 
-
-        // Save the highest score when the game ends
-        saveHighestScore(highestScore);
-
-        cout << "Do you want to play again? (Y/N): ";
-        cin >> playAgain;
-        playAgain = toupper(playAgain); // Convert to uppercase for consistency
-
-    } while (playAgain == 'Y');
-
-    cout << "Recent Highest Score: " << highestScore << endl;
-    return 0;
-}
-
+// Class representing the Food object
 class Food 
 {
 private:
