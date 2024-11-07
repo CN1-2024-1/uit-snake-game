@@ -10,6 +10,7 @@ using namespace std;
 
 const int width = 50; // Width of the game board
 const int height = 20; // Height of the game board
+const string highScoreFile = "highscore.txt"; // File to store the highest score
 
 // Function to set text color
 void setColor(int color) {
