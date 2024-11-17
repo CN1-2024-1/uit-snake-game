@@ -1,0 +1,580 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{hyperref} 
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+% Page layout settings
+\geometry{top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% Header & Footer settings
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textbf{BÁO CÁO ĐỒ ÁN NHÓM 1}}
+
+% Title and formatting
+\title{
+    \vspace{-2cm}
+    \begin{center}
+        \textbf{Trường Đại học Công nghệ thông tin} \\
+        \textbf{Đại học Quốc gia TP.Hồ Chí Minh} \\
+    \end{center}
+    \vspace{1cm}
+    \huge \textbf{ĐỒ ÁN} \\ 
+    \Large \textbf{Môn Kỹ năng nghề nghiệp} \\ 
+    \vspace{0.5cm} 
+    \Large Trò chơi Rắn săn mối
+}
+
+\begin{document}
+
+% Title Page
+\maketitle
+\thispagestyle{empty} % Empty page style for title page
+
+% Add "Team Members" section
+\begin{center}
+    \vspace{1.5cm}
+    \textbf{Nhóm 1} \\[0.5cm]
+    Nguyễn Hà Nguyên \\
+    Nguyễn Chánh Huy \\
+    Ngô Thị Như Huỳnh \\
+    Nguyễn Đinh Toàn \\
+    Trần Xuân Quang
+\end{center}
+
+% Optional: Add your logo or image (if any) at the top center
+%\begin{center}
+%   \includegraphics[width=5cm]{university_logo.png} % Uncomment this line if you have a logo
+%\end{center}
+
+% Add a section for the content details if needed
+\begin{center}
+    \vspace{2cm}
+    \textbf{Thầy hướng dẫn} \\
+    TS. Nguyễn Văn Toàn \\
+\end{center}
+
+\newpage
+
+% Add table of contents
+\tableofcontents
+\newpage
+
+% 1. Team contract
+
+\section{HỢP ĐỒNG THÀNH LẬP NHÓM}
+
+\maketitle
+
+\subsection{Thông tin nhóm}
+\begin{itemize}
+    \item \textbf{Ngày thành lập:} Thứ 4, ngày 23 tháng 10 năm 2024
+    \item \textbf{Nhóm 1}
+\end{itemize}
+
+\subsubsection{Thành viên}
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\textbf{Tên sinh viên} & \textbf{Mã số sinh viên} \\
+\hline
+Nguyễn Hà Nguyên & 24730050 \\
+Nguyễn Chánh Huy & 24730033 \\
+Ngô Thị Như Huỳnh & 24730036 \\
+Nguyễn Đinh Toàn & 24730072 \\
+Trần Xuân Quang & 24730061 \\
+\hline
+\end{tabularx}
+
+\subsubsection{Vai trò của các thành viên}
+\begin{center}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
+\hline
+\textbf{Công việc} & \textbf{Nguyễn Hà Nguyên} & \textbf{Nguyễn Đinh Toàn} & \textbf{Nguyễn Chánh Huy} & \textbf{Trần Xuân Quang} & \textbf{Ngô Thị Như Huỳnh} \\
+\hline
+Phân chia và quản lý công việc & x & & & & \\
+\hline
+Tổng hợp các tài liệu vào Đồ án & x & & & & \\
+\hline
+Làm Hợp đồng nhóm & x & & & & \\
+\hline
+Tạo Trello & & & x & & \\
+\hline
+Tạo Slack channel & & & x & & \\
+\hline
+Tạo và phân quyền Git & & x & & & \\
+\hline
+Làm Phần giới thiệu và hướng dẫn chơi game & & x & & & \\
+\hline
+Làm Tài liệu kỹ thuật của trò chơi & & & & x & \\
+\hline
+Làm Mô tả quá trình làm việc nhóm & & & & & x \\
+\hline
+Làm Tổng hợp kỹ năng làm việc nhóm & x & & & & \\
+\hline
+Coding–Làm phần hàm main, setColor, load và lưu highest score & x & & & & \\
+\hline
+Coding–Tạo class Food & & & & x & \\
+\hline
+Coding–Tạo class Snake & & & & & x \\
+\hline
+Coding–Tạo class Game & & x & & & \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsection{Mục tiêu}
+\begin{itemize}
+    \item \textbf{Nắm vững kiến thức:} Hiểu về cách vận hành nhóm hiệu quả.
+    \item \textbf{Vận dụng kiến thức:} Áp dụng kiến thức về thực hành nhóm vào việc tạo nên một trò chơi hoàn chỉnh bằng C++ (Rắn Săn Mồi).
+    \item \textbf{Phát triển kỹ năng:} Nâng cao khả năng làm việc nhóm, hợp tác hiệu quả giữa các thành viên.
+    \item \textbf{Đạt được kết quả:} Hoàn thành đồ án cuối kỳ môn Kỹ năng nghề nghiệp (Rắn Săn Mồi) và đạt được điểm số cao để qua môn học.
+\end{itemize}
+
+\subsection{Nguyên tắc}
+\begin{itemize}
+    \item Nhóm hoạt động theo mô hình chặt chẽ.
+    \item Nhóm ra quyết định dựa trên ý kiến của trưởng nhóm (tham vấn các thành viên trước khi ra quyết định).
+    \item Sẵn sàng tiếp thu những đóng góp và tôn trọng sự đa dạng trong quan điểm.
+    \item Giải quyết vấn đề trong nhóm bằng cách chia sẻ thẳng thắn và lắng nghe tích cực.
+\end{itemize}
+
+\subsection{Mô hình hoạt động và công cụ}
+
+\subsubsection{Mô hình}
+\begin{itemize}
+    \item Nhóm hoạt động online thông qua các công cụ bên dưới.
+    \item Nhóm sẽ liên hệ làm việc qua Email, Slack, Microsoft Teams, Github, v.v.
+\end{itemize}
+
+% 2. Tool (Git, Trello, ...)
+\subsubsection{Công cụ}
+\begin{itemize}
+    \item Trello: \href{https://trello.com/b/8nd8lHck/ss00410-d}{https://trello.com/b/8nd8lHck/ss00410-d}
+    \item Github: \href{https://github.com/CN1-2024-1/uit-snake-game}{https://github.com/CN1-2024-1/uit-snake-game}
+    \item Overleaf: \href{https://www.overleaf.com/read/gkpxdhndzzfs#c0209d}{https://www.overleaf.com/read/gkpxdhndzzfs#c0209d}
+    \item Slack: \href{https://ss004e11cn1.slack.com/archives/C07TPV4DKNY} {https://ss004e11cn1.slack.com/archives/C07TPV4DKNY}
+\end{itemize}
+
+\subsection{Chỉ tiêu đánh giá}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Tiêu chí} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc & Hoàn thành công việc được giao và giúp đỡ giải quyết các khó khăn trong nhóm. & Hoàn thành công việc được giao. & Hoàn thành công việc được giao nhưng cần nhiều sự hướng dẫn từ thành viên khác. & Không hoàn thành công việc được giao. \\
+\hline
+Quản lý thời gian & Hoàn thành công việc sớm trước hạn. Tham gia các cuộc họp nhóm đúng giờ. & Hoàn thành công việc đúng hạn.  Tham gia các cuộc họp nhóm đúng giờ.& Hoàn thành công việc đúng hạn hoặc trễ hơn một chút do lý do khách quan.  Tham gia các cuộc họp nhóm đúng giờ hoặc trễ hẹn do lý do khách quan có báo trước.& Không hoàn thành công việc hoặc hoàn thành rất muộn so với hạn cuối.  Tham gia các cuộc họp nhóm không đúng giờ.\\
+\hline
+Giao tiếp nhóm & Luôn chia sẻ thông tin rõ ràng, súc tích. & Hợp tác tốt với các thành viên khác. & Tham gia vào thảo luận nhưng chưa thật sự tích cực. & Gần như không giao tiếp, không chia sẻ thông tin. \\
+\hline
+\end{tabularx}
+
+\newpage
+\subsection{Cam kết}
+\begin{figure}[htbp]
+    \centering
+    \subfigure[Nguyễn Hà Nguyên]{\includegraphics[width=0.15\textwidth]{signature/image1.jpg}} \\
+    \subfigure[Nguyễn Chánh Huy]{\includegraphics[width=0.2\textwidth]{signature/image2.jpg}} \\
+    \subfigure[Ngô Thị Như Huỳnh]{\includegraphics[width=0.2\textwidth]{signature/image3.jpg}}\\
+    \subfigure[Nguyễn Đinh Toàn]{\includegraphics[width=0.2\textwidth]{signature/image4.jpg}}\\
+    \subfigure[Trần Xuân Quang]{\includegraphics[width=0.2\textwidth]{signature/image5.jpg}}\\
+\end{figure}
+\newpage
+
+% 3. Game Introduction
+\section{Giới Thiệu và Hướng Dẫn Chơi Game Rắn Ăn Mồi}
+
+\maketitle
+
+\begin{figure}[htbp]
+    \centering
+    % \subfigure {\includegraphics[width=1\textwidth]{game/snakegame1.png}} \\
+    \subfigure {\includegraphics[width=1\textwidth]{game/snakegame2.png}} \\
+\end{figure}
+
+\subsection{Giới Thiệu Trò Chơi Rắn Săn Mồi}
+Trò chơi **Rắn Ăn Mồi** là một ứng dụng console được phát triển bằng C++ trên nền tảng Windows. Trong trò chơi này, người chơi điều khiển một con rắn di chuyển trên màn hình để ăn mồi. Mỗi lần ăn mồi, rắn sẽ dài ra và điểm số của người chơi sẽ tăng lên. Mục tiêu là đạt được điểm số cao nhất có thể mà không để rắn va vào chính nó hoặc vào các cạnh của màn hình.
+
+Hiện tại, trò chơi chỉ có thể chơi trên hệ điều hành Windows và sử dụng các phím mũi tên để điều khiển. Trò chơi cũng có tính năng ghi lại điểm cao nhất của người chơi, để bạn có thể theo dõi và cố gắng phá kỷ lục của chính mình.
+
+\subsection{Hướng Dẫn Chơi Game}
+
+\subsubsection*{Cách Điều Khiển}
+Trò chơi được điều khiển bằng 4 phím mũi tên trên bàn phím:
+\begin{itemize}
+    \item \textbf{Phím mũi tên lên} (\texttt{↑}): Di chuyển rắn lên trên.
+    \item \textbf{Phím mũi tên xuống} (\texttt{↓}): Di chuyển rắn xuống dưới.
+    \item \textbf{Phím mũi tên trái} (\texttt{←}): Di chuyển rắn sang bên trái.
+    \item \textbf{Phím mũi tên phải} (\texttt{→}): Di chuyển rắn sang bên phải.
+\end{itemize}
+
+\subsubsection*{Luật Chơi}
+\begin{itemize}
+    \item Người chơi điều khiển rắn để ăn mồi xuất hiện ngẫu nhiên trên màn hình. Mỗi khi ăn mồi, rắn sẽ dài ra và điểm của người chơi sẽ tăng thêm.
+    \item Trò chơi sẽ kết thúc nếu rắn va vào chính nó hoặc chạm vào các cạnh của màn hình.
+    \item Điểm số cao nhất sẽ được lưu lại để người chơi có thể cố gắng vượt qua kỷ lục của mình trong các lần chơi sau.
+\end{itemize}
+
+\subsubsection*{Lưu Ý Khi Chơi Trên Nền Tảng Windows}
+Trò chơi hiện chỉ hỗ trợ hệ điều hành Windows và sử dụng các phím mũi tên để điều khiển. Trò chơi có thể không chạy được trên macOS hoặc các hệ điều hành khác nếu không có môi trường tương thích với console Windows.
+
+\subsubsection*{Mục Tiêu Của Trò Chơi}
+Hãy cố gắng điều khiển rắn ăn càng nhiều mồi càng tốt để đạt điểm cao nhất mà không để rắn va vào các vật cản. Đây là trò chơi rèn luyện sự tập trung và kỹ năng phản xạ nhanh của người chơi.
+
+\subsubsection*{Chúc Bạn Chơi Vui Vẻ!}
+Hy vọng bạn sẽ có những phút giây thư giãn với trò chơi **Rắn Ăn Mồi** và đạt được kỷ lục mới!
+
+
+\newpage
+% 4. Technical Document
+\section{Tài liệu kỹ thuật Rắn Săn Mồi}
+
+\subsection{Các chức năng chính và hướng dẫn chơi game}
+\begin{itemize}
+    \item \textbf{Mục tiêu:} Điều khiển rắn ăn thức ăn để lớn lên và đạt điểm cao nhất có thể mà không va chạm vào tường hoặc chính mình.
+    \item \textbf{Điều khiển rắn:} Sử dụng các phím mũi tên (←, ↑, →, ↓) để điều khiển hướng đi của rắn. Rắn sẽ di chuyển liên tục trong hướng đã chọn.
+    \item \textbf{Sinh thức ăn ngẫu nhiên:} Thức ăn xuất hiện ngẫu nhiên trên bản đồ, với màu sắc và ký tự ngẫu nhiên.
+    \item \textbf{Tính điểm và lưu điểm cao:} Điểm của người chơi được tăng mỗi khi rắn ăn thức ăn. Điểm cao nhất được lưu vào file.
+    \item \textbf{Hiển thị trò chơi:} Trò chơi hiển thị rắn, thức ăn, đường viền và thông tin điểm số, tốc độ.
+\end{itemize}
+
+\subsection{Cấu trúc chính của chương trình}
+Cấu trúc của chương trình bao gồm các phần chính sau:
+\begin{itemize}
+    \item \textbf{Food:} Quản lý thức ăn và các đặc điểm của thức ăn trong trò chơi.
+    \item \textbf{Snake:} Quản lý rắn và các đặc điểm của rắn.
+    \item \textbf{Game:} Quản lý toàn bộ logic trò chơi, bao gồm vẽ giao diện, nhận điều khiển từ người chơi, và xử lý va chạm.
+    \item \textbf{main():} Khởi tạo trò chơi, vòng lặp chính, lưu điểm cao và lựa chọn chơi lại.
+\end{itemize}
+
+Dưới đây là sơ đồ khối cấu trúc của chương trình:
+
+\begin{verbatim}
+main()
+│
+├── Load và lưu highest score
+│
+├── Vòng lặp chơi chính
+│   └── Game.Run() 
+│       ├── Input() : Xử lý điều khiển
+│       ├── Draw() : Vẽ trò chơi
+│       └── Logic() : Xử lý trạng thái trò chơi
+│
+└── Lưu điểm cao sau khi trò chơi kết thúc
+\end{verbatim}
+
+\subsection{Các class/struct chính}
+
+\subsubsection{Class Food}
+Class Food quản lý vị trí, ký hiệu, và màu sắc của thức ăn.
+
+\textbf{Thuộc tính:}
+\begin{itemize}
+    \item int x, y: Tọa độ của thức ăn.
+    \item char symbol: Ký tự đại diện cho thức ăn (ngẫu nhiên từ A đến Z).
+    \item int color: Màu sắc của thức ăn (ngẫu nhiên từ 10 đến 16).
+\end{itemize}
+
+\textbf{Phương thức:}
+\begin{itemize}
+    \item Food(): Constructor, tự động gọi hàm spawn() để sinh thức ăn ban đầu.
+    \item void spawn(): Sinh lại thức ăn ở vị trí ngẫu nhiên và với ký hiệu, màu sắc mới.
+    \item int getX(), int getY(), char getSymbol(), int getColor(): Trả về tọa độ, ký hiệu và màu sắc của thức ăn.
+\end{itemize}
+
+\subsubsection{Class Snake}
+Class Snake quản lý vị trí và hành vi của rắn.
+
+\textbf{Thuộc tính:}
+\begin{itemize}
+    \item int x, y: Tọa độ của đầu rắn.
+    \item vector<pair<int, int>> tail: Mảng chứa tọa độ các đoạn thân của rắn.
+    \item int score: Điểm của người chơi.
+\end{itemize}
+
+\textbf{Phương thức:}
+\begin{itemize}
+    \item Snake(): Constructor khởi tạo vị trí đầu rắn ở giữa bản đồ.
+    \item void move(int dir): Cập nhật vị trí rắn theo hướng di chuyển.
+    \item void grow(): Tăng độ dài của rắn khi ăn thức ăn, tăng điểm.
+    \item bool checkCollision(): Kiểm tra va chạm với tường hoặc thân rắn.
+    \item int getX(), int getY(), int getScore(), const vector<pair<int, int>>& getTail(): Trả về tọa độ, điểm và các đoạn thân của rắn.
+    \item void reset(): Đặt lại trạng thái rắn khi trò chơi khởi động lại.
+\end{itemize}
+
+\subsubsection{Class Game}
+Class Game điều khiển toàn bộ trạng thái và logic của trò chơi.
+
+\textbf{Thuộc tính:}
+\begin{itemize}
+    \item Snake snake: Đối tượng rắn.
+    \item Food food: Đối tượng thức ăn.
+    \item bool gameOver: Cờ trạng thái kết thúc trò chơi.
+    \item int direction: Hướng di chuyển của rắn (0: Lên, 1: Xuống, 2: Trái, 3: Phải).
+    \item int speed: Tốc độ di chuyển của rắn (đơn vị: ms).
+    \item int highestScore: Điểm cao nhất được lưu từ file.
+\end{itemize}
+
+\textbf{Phương thức:}
+\begin{itemize}
+    \item Game(int highScore): Constructor khởi tạo trò chơi với điểm cao.
+    \item void reset(): Đặt lại trò chơi khi người chơi bắt đầu lại.
+    \item void Draw(): Vẽ trò chơi, bao gồm đường viền, rắn, thức ăn và thông tin điểm số.
+    \item void Input(): Xử lý đầu vào từ bàn phím để điều khiển rắn.
+    \item void Logic(): Xử lý các logic của trò chơi (di chuyển, ăn thức ăn, va chạm).
+    \item void Run(): Vòng lặp chính của trò chơi.
+\end{itemize}
+
+\subsection{Cách tổ chức cấu trúc dữ liệu}
+\begin{itemize}
+    \item \textbf{Rắn (Snake):} Sử dụng vector<pair<int, int>> tail để lưu tọa độ các đoạn thân, giúp dễ dàng quản lý các phần thân của rắn và thuận tiện trong việc vẽ rắn.
+    \item \textbf{Thức ăn (Food):} Chứa tọa độ, ký hiệu và màu sắc được lưu dưới dạng các biến riêng biệt (x, y, symbol, color).
+    \item \textbf{Điểm cao:} Điểm cao nhất được lưu trong file highscore.txt và tải lên khi bắt đầu trò chơi.
+\end{itemize}
+
+\subsection{Giải thuật}
+
+\subsubsection{Điều khiển di chuyển của rắn}
+\begin{itemize}
+    \item Sử dụng phương thức move(int dir) để thay đổi tọa độ đầu rắn theo hướng di chuyển.
+    \item Thân rắn được cập nhật bằng cách chèn vị trí mới của đầu vào tail và loại bỏ đoạn cuối nếu rắn không đang phát triển.
+\end{itemize}
+
+\subsubsection{Sinh thức ăn}
+\begin{itemize}
+    \item Food::spawn() tạo vị trí ngẫu nhiên cho thức ăn trong khu vực không chứa đường viền.
+    \item Ký tự và màu sắc của thức ăn cũng được chọn ngẫu nhiên, tạo nên sự đa dạng.
+\end{itemize}
+
+\subsubsection{Xử lý va chạm}
+\begin{itemize}
+    \item \textbf{Va chạm tường:} Xử lý trong hàm checkCollision(). Nếu tọa độ đầu của rắn nằm ngoài biên, trò chơi kết thúc.
+    \item \textbf{Va chạm với thân rắn:} Duyệt qua các đoạn thân trong tail, nếu có đoạn nào trùng với đầu rắn thì kết thúc trò chơi.
+\end{itemize}
+
+\subsubsection{Xử lý điểm và tăng tốc độ}
+\begin{itemize}
+    \item Mỗi lần ăn thức ăn, điểm số của rắn được tăng, và speed giảm 10\% để tăng tốc độ rắn.
+    \item Khi trò chơi kết thúc, nếu điểm của người chơi cao hơn điểm cao hiện tại, trò chơi sẽ cập nhật điểm cao mới và lưu vào file.
+\end{itemize}
+
+\subsection{Lưu và tải điểm cao}
+\begin{itemize}
+    \item \textbf{Lưu điểm cao:} Sử dụng saveHighestScore(int score) để ghi điểm cao mới vào file highscore.txt.
+    \item \textbf{Tải điểm cao:} Sử dụng loadHighestScore() để đọc điểm cao từ file highscore.txt khi khởi động trò chơi.
+\end{itemize}
+
+\newpage
+% 5. Team Work
+\section{Mô tả quá trình làm việc nhóm}
+\subsection{Mở đầu}
+Báo cáo này trình bày chi tiết quá trình làm việc nhóm trong dự án thiết lập game Snake, từ giai đoạn lên kế hoạch, phân công công việc đến khi hoàn thành. Báo cáo sẽ tập trung vào các hoạt động cụ thể, các vấn đề gặp phải và cách giải quyết. Đồng thời đánh giá hiệu quả của phương pháp làm việc nhóm đã được áp dụng.
+
+\subsection{Quá trình}
+
+\subsubsection*{Tuần 1: Lên kế hoạch và chuẩn bị}
+Trong tuần đầu tiên, nhóm đã tập trung vào việc lên kế hoạch chi tiết và phân công công việc cho từng thành viên. Các công cụ hỗ trợ chính trong giai đoạn này bao gồm Trello, Github, LaTeX và Slack.
+
+\begin{itemize}
+    \item \textbf{Trello:} 
+    \begin{itemize}
+        \item Được sử dụng làm bảng quản lý công việc chính của nhóm do Chánh Huy dẫn dắt và kết nối mọi người.
+        \item Trưởng nhóm Hà Nguyên tạo các thẻ công việc tương ứng với từng phần của dự án (ví dụ: tạo không gian làm việc chung, lập trình từng phần game, ...).
+        \item Mỗi thành viên tự chọn thẻ công việc mình muốn đảm nhận và cập nhật tiến độ làm việc trực tiếp trên Trello.
+    \end{itemize}
+
+    \item \textbf{Github:}
+    \begin{itemize}
+        \item Được sử dụng làm nền tảng quản lý mã nguồn.
+        \item Anh Toàn đảm nhận vai trò hướng dẫn các thành viên mới tải Sourcetree để sử dụng các tính năng cơ bản của Github như tạo branch, commit, pull request.
+    \end{itemize}
+
+    \item \textbf{LaTeX:}
+    \begin{itemize}
+        \item Chị Hà Nguyên sử dụng LaTeX để soạn thảo hợp đồng nhóm.
+        \item Hợp đồng này bao gồm các thông tin về phân công công việc, thời hạn hoàn thành, quyền lợi và nghĩa vụ của từng thành viên.
+    \end{itemize}
+
+    \item \textbf{Slack:}
+    \begin{itemize}
+        \item Được sử dụng làm công cụ giao tiếp chính của nhóm.
+        \item Mọi thắc mắc, trao đổi thông tin, cập nhật tiến độ đều được thực hiện trên Slack.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{Thực hiện và giải quyết vấn đề}
+\textbf{Tiến hành công việc:}
+\begin{itemize}
+    \item Các thành viên bắt đầu thực hiện các công việc đã được phân công.
+    \item Nhóm đã tổ chức các cuộc họp trực tuyến trên Slack để trao đổi về các vấn đề kỹ thuật, thống nhất các giải pháp và giải quyết các khó khăn phát sinh.
+\end{itemize}
+
+\textbf{Thuận lợi:}
+\begin{itemize}
+    \item \textit{Sẵn có nguồn lực:} Nhóm có sự tham gia của các thành viên đã có kinh nghiệm lập trình, giúp hỗ trợ và hướng dẫn các thành viên mới.
+    \item \textit{Công cụ hỗ trợ hiệu quả:} Các công cụ Trello, Github, Slack đã giúp nhóm quản lý công việc, chia sẻ thông tin và giải quyết vấn đề một cách hiệu quả.
+    \item Các thành viên nhiệt tình và đóng góp nhiều trong quá trình làm việc nhóm, đúng hẹn và tiếp nhận ý kiến một cách tích cực.
+\end{itemize}
+
+\textbf{Khó khăn và giải pháp:}
+\begin{itemize}
+    \item \textit{Conflict trong code:}
+    \begin{itemize}
+        \item Nguyên nhân: Mọi người cùng làm việc trên cùng một file code dẫn đến xung đột khi cập nhật thay đổi.
+        \item Giải pháp: Nhóm đã quyết định sử dụng các nhánh trên Github. Mỗi thành viên sẽ tạo một nhánh riêng để làm việc, sau đó tiến hành merge các nhánh lại khi hoàn thành công việc.
+    \end{itemize}
+
+    \item \textit{Sắp xếp thời gian:}
+    \begin{itemize}
+        \item Nguyên nhân: Do các thành viên có lịch làm việc khác nhau nên việc sắp xếp thời gian họp chung gặp nhiều khó khăn.
+        \item Giải pháp: Nhóm đã tạo một bảng lịch chung trên Google Calendar để mọi người có thể dễ dàng xem và sắp xếp thời gian họp.
+    \end{itemize}
+
+    \item \textit{Khó khăn của người mới:}
+    \begin{itemize}
+        \item Nguyên nhân: Các thành viên mới gặp khó khăn trong việc làm quen với các khái niệm lập trình và các công cụ hỗ trợ.
+        \item Giải pháp: Các thành viên có kinh nghiệm đã dành thời gian để hướng dẫn, giải đáp thắc mắc và chia sẻ tài liệu cho các thành viên mới.
+    \end{itemize}
+
+    \item \textit{Nhóm thiếu thành viên tham dự họp:}
+    \begin{itemize}
+        \item Nguyên nhân: Có việc bận đột xuất trong tuần.
+        \item Giải pháp: Trưởng nhóm là chị Hà Nguyên đã linh hoạt chuyển giao nhiệm vụ cho anh Toàn để tiếp tục thực hiện phần việc còn lại, đảm bảo mọi thứ đều hoàn thành đúng tiến độ đề ra.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Kết luận}
+Qua hai tuần thực hiện dự án, nhóm đã đạt được những kết quả nhất định. Các thành viên đã làm quen và sử dụng cơ bản các công cụ hỗ trợ làm việc nhóm. Mặc dù gặp phải một số khó khăn nhưng nhóm đã kịp thời tìm ra giải pháp và khắc phục. Dự án Rắn Săn Mồi là một trải nghiệm học tập bổ ích cho tất cả các thành viên. Qua dự án này, nhóm đã rèn luyện được kỹ năng làm việc nhóm, kỹ năng giải quyết vấn đề và có thêm những người bạn mới.
+
+\subsection{Bài học rút ra}
+\begin{itemize}
+    \item \textit{Tầm quan trọng của việc lên kế hoạch:} Một kế hoạch chi tiết và rõ ràng là rất cần thiết để đảm bảo dự án được thực hiện đúng tiến độ.
+    \item \textit{Vai trò của công cụ hỗ trợ:} Các công cụ như Trello, Github, Slack đã giúp nhóm làm việc hiệu quả hơn.
+    \item \textit{Sự cần thiết của giao tiếp:} Việc giao tiếp thường xuyên và cởi mở giúp giải quyết các vấn đề phát sinh và đảm bảo sự thống nhất trong nhóm.
+    \item \textit{Sự cần thiết của việc hỗ trợ lẫn nhau:} Việc các thành viên hỗ trợ lẫn nhau giúp nâng cao hiệu quả làm việc của cả nhóm.
+\end{itemize}
+
+\newpage
+% 6. Team Work Skills
+\section{Các Kỹ Năng Quan Trọng Trong Công Việc Nhóm}
+
+\subsection{Kỹ năng Giao tiếp}
+\textbf{Giải thích chi tiết:}  
+Kỹ năng giao tiếp là khả năng truyền đạt thông tin một cách rõ ràng và hiệu quả giữa các thành viên trong nhóm. Trong dự án này, nhóm đã sử dụng \textbf{Slack} như một công cụ giao tiếp chính. Việc giao tiếp thông qua Slack giúp các thành viên dễ dàng thảo luận, trao đổi thông tin và giải quyết các vấn đề phát sinh ngay lập tức, mà không gặp phải sự chậm trễ như qua email. Một số đặc điểm của giao tiếp hiệu quả là:
+\begin{itemize}
+    \item \textbf{Rõ ràng và minh bạch:} Các thông báo, yêu cầu, hay vấn đề được trình bày rõ ràng, giúp mọi người dễ dàng hiểu và phản hồi.
+    \item \textbf{Tính kịp thời:} Việc giao tiếp trực tuyến giúp các thành viên phản hồi nhanh chóng và tránh bị bỏ sót thông tin quan trọng.
+    \item \textbf{Cởi mở và hỗ trợ:} Các thành viên trong nhóm luôn sẵn sàng hỗ trợ nhau, chia sẻ thông tin và kiến thức mà không ngần ngại.
+\end{itemize}
+
+\subsection{Kỹ năng Quản lý Công việc và Tổ chức Thời gian}
+\textbf{Giải thích chi tiết:}  
+Quản lý công việc và tổ chức thời gian là một kỹ năng quan trọng giúp đảm bảo tiến độ dự án. Nhóm đã sử dụng \textbf{Trello} để phân công và theo dõi tiến độ công việc. Trello là một công cụ quản lý công việc rất hiệu quả nhờ vào các bảng, danh sách và thẻ giúp nhóm có cái nhìn tổng quan về tiến độ và trách nhiệm của từng thành viên. Cùng với đó, \textbf{Google Calendar} giúp nhóm dễ dàng sắp xếp các cuộc họp và các hoạt động quan trọng, đảm bảo không bỏ sót lịch trình hoặc thời gian quan trọng. Những yếu tố cần thiết khi quản lý công việc và thời gian bao gồm:
+\begin{itemize}
+    \item \textbf{Lên kế hoạch chi tiết:} Xác định rõ nhiệm vụ, mốc thời gian và người chịu trách nhiệm cho từng phần công việc.
+    \item \textbf{Theo dõi tiến độ:} Cập nhật thường xuyên tình hình công việc để tránh việc chậm trễ hoặc quên nhiệm vụ.
+    \item \textbf{Điều chỉnh thời gian hợp lý:} Sắp xếp thời gian làm việc sao cho phù hợp với lịch trình của tất cả thành viên trong nhóm.
+\end{itemize}
+
+\subsection{Kỹ năng Giải quyết Vấn đề và Xử lý Xung đột}
+\textbf{Giải thích chi tiết:}  
+Giải quyết vấn đề và xử lý xung đột là kỹ năng thiết yếu khi làm việc nhóm, đặc biệt khi các thành viên có thể gặp phải các vấn đề như xung đột về mã nguồn hoặc lịch trình. Trong dự án này, nhóm đã gặp phải vấn đề \textbf{xung đột mã nguồn} khi nhiều người cùng làm việc trên một file mã nguồn. Để giải quyết, nhóm quyết định sử dụng \textbf{Github} và phân chia công việc qua các nhánh (branches). Mỗi thành viên sẽ làm việc trên một nhánh riêng biệt, sau đó tiến hành \textbf{merge} các nhánh lại khi hoàn thành phần việc. Điều này giúp tránh tình trạng ghi đè hoặc xung đột trong mã nguồn.
+\begin{itemize}
+    \item \textbf{Xử lý vấn đề kỹ thuật:} Sử dụng công cụ và chiến lược hợp lý để giải quyết các vấn đề kỹ thuật (ví dụ: xung đột mã nguồn).
+    \item \textbf{Giải quyết xung đột trong nhóm:} Xử lý các vấn đề liên quan đến sự bất đồng ý kiến hoặc xung đột công việc giữa các thành viên, đảm bảo mọi người đều có thể hoàn thành công việc đúng hạn.
+\end{itemize}
+
+\subsection{Kỹ năng Hỗ trợ Lẫn nhau và Chia sẻ Kiến thức}
+\textbf{Giải thích chi tiết:}  
+Trong một nhóm làm việc, việc hỗ trợ lẫn nhau và chia sẻ kiến thức rất quan trọng để mọi người cùng tiến bộ và hoàn thành công việc một cách hiệu quả. Nhóm đã tận dụng sự khác biệt về kỹ năng và kinh nghiệm của các thành viên. Những người có kinh nghiệm hơn đã chủ động \textbf{hướng dẫn và chia sẻ tài liệu} cho các thành viên mới, giúp họ nhanh chóng làm quen với công cụ và quy trình làm việc. Điều này không chỉ giúp các thành viên mới tự tin hơn mà còn tạo nên một môi trường làm việc hợp tác, thân thiện và hiệu quả.
+\begin{itemize}
+    \item \textbf{Hỗ trợ kỹ thuật:} Những thành viên có kinh nghiệm chia sẻ kiến thức và giải đáp các thắc mắc cho những thành viên chưa quen.
+    \item \textbf{Chia sẻ tài liệu và công cụ:} Cung cấp tài liệu học tập, hướng dẫn chi tiết giúp các thành viên mới dễ dàng tiếp cận công việc.
+\end{itemize}
+
+\subsection{Kỹ năng Thích ứng và Linh hoạt}
+\textbf{Giải thích chi tiết:}  
+Làm việc nhóm đôi khi gặp phải những tình huống bất ngờ như thay đổi lịch trình, thành viên vắng mặt hoặc công việc không diễn ra như kế hoạch. Kỹ năng thích ứng và linh hoạt trong công việc là rất cần thiết để nhóm có thể tiếp tục làm việc hiệu quả. Ví dụ, khi một số thành viên không thể tham gia các cuộc họp, trưởng nhóm đã nhanh chóng \textbf{chuyển giao nhiệm vụ} cho các thành viên khác để đảm bảo tiến độ công việc không bị ảnh hưởng. Ngoài ra, nhóm cũng phải điều chỉnh kế hoạch và quy trình làm việc khi gặp phải các vấn đề hoặc thay đổi ngoài dự đoán.
+\begin{itemize}
+    \item \textbf{Thích ứng với thay đổi:} Đáp ứng linh hoạt với các tình huống thay đổi, như thay đổi về thời gian, công việc hay điều kiện làm việc.
+    \item \textbf{Linh hoạt trong phân công công việc:} Thực hiện chuyển giao nhiệm vụ khi có sự vắng mặt của thành viên hoặc khi công việc không thể hoàn thành đúng hạn.
+    \item \textbf{Giải quyết vấn đề đột xuất:} Có khả năng đối mặt với các tình huống khó khăn hoặc bất ngờ và tìm ra giải pháp hợp lý.
+\end{itemize}
+
+\newpage
+\section{Đánh giá các thành viên trong nhóm} (Được thực hiện sau khi hoàn thành Rắn Săn Mồi)
+
+\subsection{Đánh giá Nguyễn Hà Nguyên}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Đặc điểm} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc &  & & & \\
+\hline
+Quản lý thời gian & &  & & \\
+\hline
+Giao tiếp nhóm &  & & & \\
+\hline
+\end{tabularx}
+
+\subsection{Đánh giá Nguyễn Chánh Huy}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Đặc điểm} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc & &  & & \\
+\hline
+Quản lý thời gian &  & & & \\
+\hline
+Giao tiếp nhóm & &  & & \\
+\hline
+\end{tabularx}
+
+\subsection{Đánh giá Ngô Thị Như Huỳnh}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Đặc điểm} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc &  & & & \\
+\hline
+Quản lý thời gian & &  & & \\
+\hline
+Giao tiếp nhóm & &  & & \\
+\hline
+\end{tabularx}
+
+\subsection{Đánh giá Nguyễn Đinh Toàn}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Đặc điểm} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc &  & & & \\
+\hline
+Quản lý thời gian & &  & & \\
+\hline
+Giao tiếp nhóm &  & & & \\
+\hline
+\end{tabularx}
+
+\subsection{Đánh giá Trần Xuân Quang}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+\hline
+\textbf{Đặc điểm} & \textbf{Rất tốt} & \textbf{Tốt} & \textbf{Tạm được} & \textbf{Kém} \\
+\hline
+Thái độ / Hiệu suất làm việc &  & & & \\
+\hline
+Quản lý thời gian & &  & & \\
+\hline
+Giao tiếp nhóm &  & & & \\
+\hline
+\end{tabularx}
+
+\end{document}
